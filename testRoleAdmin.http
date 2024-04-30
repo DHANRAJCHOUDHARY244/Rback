@@ -1,0 +1,56 @@
+### protected admin create role
+POST  http://localhost:3000/admin/create-role
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJExhM0d2Qmh1SEE2QndUaFlac0RRdmVPYnhzZUp2Ym1rNEtlUHVBSi9aNFFrVHI5dU5rUjU2IiwiaWF0IjoxNzEyMzA5Mzk2LCJleHAiOjE3MTIzMTI5OTZ9.X5EtPIJaEsdsWsMVumU_4FD3_dvJfUftCf8QUWjgj9c
+Content-Type: application/json
+
+{
+     "role_name":"manager",
+    "modules": {
+        "user": {
+            "action": ["/reg", "/login", "/forget-pass", "/verify-otp"]
+        },
+        "admin": {
+            "action": []
+        },
+        "products": {
+            "action": ["/products"]
+        }
+    }
+}
+
+
+### protected admin get all roles
+GET http://localhost:3000/admin/roles
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJExhM0d2Qmh1SEE2QndUaFlac0RRdmVPYnhzZUp2Ym1rNEtlUHVBSi9aNFFrVHI5dU5rUjU2IiwiaWF0IjoxNzEyMzA5Mzk2LCJleHAiOjE3MTIzMTI5OTZ9.X5EtPIJaEsdsWsMVumU_4FD3_dvJfUftCf8QUWjgj9c
+
+
+
+### protected admin get single role
+GET  http://localhost:3000/admin/role/manager
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJExhM0d2Qmh1SEE2QndUaFlac0RRdmVPYnhzZUp2Ym1rNEtlUHVBSi9aNFFrVHI5dU5rUjU2IiwiaWF0IjoxNzEyMzA5Mzk2LCJleHAiOjE3MTIzMTI5OTZ9.X5EtPIJaEsdsWsMVumU_4FD3_dvJfUftCf8QUWjgj9c
+
+
+### protected admin get update role
+PUT   http://localhost:3000/admin/update-role/manager
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJExhM0d2Qmh1SEE2QndUaFlac0RRdmVPYnhzZUp2Ym1rNEtlUHVBSi9aNFFrVHI5dU5rUjU2IiwiaWF0IjoxNzEyMzA5Mzk2LCJleHAiOjE3MTIzMTI5OTZ9.X5EtPIJaEsdsWsMVumU_4FD3_dvJfUftCf8QUWjgj9c
+Content-Type: application/json
+
+{
+     "role_name":"manager",
+    "modules": {
+           "user": {
+                "action": ["/reg", "/login", "/forget-pass", "/verify-otp"]
+            },
+            "admin": {
+                "action": []
+            },
+           "products": {
+                "action": []
+            }
+        }
+}
+
+
+### protected admin delete role
+DELETE  http://localhost:3000/admin/delete-role/manager
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJExhM0d2Qmh1SEE2QndUaFlac0RRdmVPYnhzZUp2Ym1rNEtlUHVBSi9aNFFrVHI5dU5rUjU2IiwiaWF0IjoxNzEyMzA5Mzk2LCJleHAiOjE3MTIzMTI5OTZ9.X5EtPIJaEsdsWsMVumU_4FD3_dvJfUftCf8QUWjgj9c

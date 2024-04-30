@@ -1,0 +1,34 @@
+### protected admin get all users api
+GET http://localhost:3000/admin/users
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJDRLeFluTjY3LlpOc1dsUm8zWXFtcGVTV05OVjZTNW13TWhpWTFxUFp6NllORllhM0pQbkMyIiwiaWF0IjoxNzEwOTU2ODQ1LCJleHAiOjE3MTA5NjA0NDV9.1XzDJ85SL1DgZRYye5e0MYbfdpoM6Ts5WP0zHkbL2bw
+
+### protected admin get single user api
+GET http://localhost:3000/admin/user
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJDRLeFluTjY3LlpOc1dsUm8zWXFtcGVTV05OVjZTNW13TWhpWTFxUFp6NllORllhM0pQbkMyIiwiaWF0IjoxNzEwOTU2ODQ1LCJleHAiOjE3MTA5NjA0NDV9.1XzDJ85SL1DgZRYye5e0MYbfdpoM6Ts5WP0zHkbL2bw
+Content-Type: application/json
+
+{
+    "email":"admin@admin.com",
+    "role":""
+}
+
+
+### protected admin get single user api
+PUT http://localhost:3000/admin/user-role-update
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJDRLeFluTjY3LlpOc1dsUm8zWXFtcGVTV05OVjZTNW13TWhpWTFxUFp6NllORllhM0pQbkMyIiwiaWF0IjoxNzEwOTYwODM2LCJleHAiOjE3MTA5NjQ0MzZ9.IBraetMjcmRoEQut0OdfLz8tOjpHcWySS4uxy4sVCSw
+Content-Type: application/json
+
+{
+    "email":"dj@admin.com",
+    "role":["user"]
+}
+
+### protected admin get single user api
+DELETE  http://localhost:3000/admin/del-user
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNob3VkaGFyeWRoYW5yYWoyMzlAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkRm1vTnEwR1JBRkYyc3hBOXpGVFlyT21ZYXdNWFF6TzdLOXdud05KY3VvWjlyZmVMQ3BEV20iLCJyb2xlIjoiYWRtaW4iLCJyZXN0cmljdCI6ZmFsc2UsImlhdCI6MTcxMDQ5NzY2MywiZXhwIjoxNzEwNTAxMjYzfQ.QX3ovLIL4HLWUyfZtU2KxAG671QOjjM2Q9W6ICdV1jY
+Content-Type: application/json
+
+{
+    "email":"2020btcse009@curaj.ac.in",
+    "role":""
+}
